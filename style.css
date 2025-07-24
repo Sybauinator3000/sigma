@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     * margin: 0;
     * padding: 0;
@@ -29,14 +33,30 @@ nav {
     justify-content: space-between;
     background-color: white;
     padding: 16px 32px;
-    border-bottom: 1px solid #e5e5e5;
+    min-height: 64px;
 
 }
 
 footer {
     display: flex;
-    border-top: 1px solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
     background-color: white;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 16px 32px;
+    background-color: white;
+    transition: border-bottom 0.3s ease;
+    border-bottom: 1px solid transparent;
+    min-height: 64px;
+}
+
+.site-header.scrolled {
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .footer-container {
@@ -113,16 +133,23 @@ footer {
 
 .navi-container {
     display: flex;
-    gap: 25px;
+    gap: 40px;
     justify-content: center;
     flex: 2;
 }
 
-.navi p {
+.navi a {
     font-size: 20px;
     margin: 0;
     cursor: pointer;
     font-weight: 500;
+    color: #666666;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+.navi a:hover {
+    color: #000000;
 }
 
 .auth {
@@ -288,7 +315,7 @@ footer {
 }
 
 .hero {
-    background-color: #f4f4f6;
+    background-color: white;
     padding: 277px 20px;
 }
 
@@ -381,19 +408,19 @@ footer {
     box-shadow 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
-
-.why-us-section {
+.Dla-kogo-section {
     background-color: #ffffff;
 	padding: 277px 20px;
 	border-top: 2px solid #e5e5e5;
+	height: 195px;
 }
 
-.why-us.section .container {
+.Dla-kogo-section .container {
 	max-width: 1200px;
 	margin: 0 auto;
 	text-align: center;
     }
-    .why-us-section h1 {
+    .Dla-kogo-section h1 {
 	font-size: 32px;
 	color: #222222;
 	margin-bottom: 20px;
@@ -402,8 +429,38 @@ footer {
 
     }
 
-    .why-us-section .intro {
+    .Dla-kogo-section .intro {
 	font-size: 18px;
 	color: #555555;
 	margin-bottom: 40px;
     }
+
+
+.Jak-to-section {
+    background-color: #ffffff;
+	padding: 277px 20px;
+	border-top: 2px solid #e5e5e5;
+	height: 195px;
+}
+
+.Jak-to-section .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+    }
+    .Jak-to-section h1 {
+	font-size: 32px;
+	color: #222222;
+	margin-bottom: 20px;
+	justify-content: center;
+	margin-top: -205px;
+
+    }
+
+    .Jak-to-section .intro {
+	font-size: 18px;
+	color: #555555;
+	margin-bottom: 40px;
+    }
+
+    
