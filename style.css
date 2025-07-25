@@ -129,6 +129,7 @@ footer {
 
 .logo img {
     flex: 1;
+    vertical-align:top;
 }
 
 .navi-container {
@@ -207,7 +208,7 @@ footer {
 }
 
 .modal-content {
-    animation: fadeIn 0.2s ease forwards;
+    animation: fadeIn 0.4s ease forwards;
     background: white;
     padding: 32px;
     border-radius: 12px;
@@ -409,7 +410,7 @@ footer {
 }
 
 .Dla-kogo-section {
-    background-color: #ffffff;
+    background-color: #E5E7EB;
 	padding: 277px 20px;
 	border-top: 2px solid #e5e5e5;
 	height: 195px;
@@ -418,13 +419,37 @@ footer {
 .Dla-kogo-section .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 0 20px;
 	text-align: center;
     }
+
+.h2-row {
+	display: flex;
+	margin-top: 40px;
+	width: 100%;
+    }
+
+    .h2-row .half {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+    }
+
+    .h2-row h2 {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 0;
+	text-align: center;
+    }
+
+
     .Dla-kogo-section h1 {
 	font-size: 32px;
 	color: #222222;
 	margin-bottom: 20px;
 	justify-content: center;
+	text-align: center;
 	margin-top: -205px;
 
     }
@@ -463,4 +488,28 @@ footer {
 	margin-bottom: 40px;
     }
 
-    
+.feature-box {
+	background-color: white;
+	padding: 30px 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+	max-width: 350px;
+    }
+
+    .feature-box ul {
+	padding: 0;
+	margin: 0;
+    }
+
+    .feature-box li {
+	position: relative;
+	padding-left: 0px;
+	list-style-position: inside;
+	margin-bottom: 12px;
+	line-height: 1.5;
+    }
+
+    .feature-box h2 {
+	margin-bottom: 16px;
+    }
+
